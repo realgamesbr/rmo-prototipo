@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horários e Ingressos · Rio Museu Olímpico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<div id="site-header-host"></div>
+
+<main id="main">
+
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html">Início</a> ·
+        <a href="index.html" data-i18n="nav.visite">Visite</a> ·
+        <span data-i18n="nav.visite_horarios">Horários e ingressos</span>
+      </nav>
+      <h1 data-i18n="nav.visite_horarios">Horários e ingressos</h1>
+      <p class="lead">Funcionamento, valores e canais de venda.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container container-sm">
+
+      <h2>Horário de funcionamento</h2>
+      <table class="info-table">
+        <thead>
+          <tr><th>Dia</th><th>Horário</th><th>Última entrada</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Segunda-feira</td><td>Fechado</td><td>—</td></tr>
+          <tr><td>Terça a domingo</td><td><strong>10h às 17h30</strong></td><td>16h</td></tr>
+          <tr><td>Feriados nacionais</td><td>Fechado</td><td>—</td></tr>
+          <tr><td>24, 25, 31/12 e 01/01</td><td>Fechado</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <h2 style="margin-top: var(--s-7);">Valores</h2>
+      <table class="info-table">
+        <thead>
+          <tr><th>Categoria</th><th>Valor</th><th>Quem tem direito</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Inteira</strong></td><td>R$ 40,00</td><td>Público geral</td></tr>
+          <tr><td><strong>Meia-entrada</strong></td><td>R$ 20,00</td><td>Estudantes, professores, idosos 60+, PCDs e acompanhante (Lei 12.933/13)</td></tr>
+          <tr><td><strong>Gratuito</strong></td><td>R$ 0</td><td>Crianças até 2 anos</td></tr>
+          <tr><td><strong>Última terça do mês</strong></td><td>R$ 0</td><td>Entrada gratuita por ordem de chegada na bilheteria física</td></tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top: var(--s-5); padding: var(--s-4); background: rgba(244,121,32,.08); border-left: 4px solid var(--c-orange); border-radius: var(--radius);">
+        <strong>Atenção:</strong> Para meia-entrada, é obrigatória a apresentação de documento comprobatório no momento da entrada. Compras antecipadas ficam sujeitas à validação na bilheteria.
+      </div>
+
+      <h2 style="margin-top: var(--s-7);" id="agendar">Compre seu ingresso</h2>
+      <p class="lead">As vendas online são feitas pela plataforma Sympla. Recomendamos a compra antecipada, principalmente em finais de semana e feriados.</p>
+
+      <div class="grid grid-2 mt-5">
+        <div class="card">
+          <div class="card-body">
+            <h3>Online (Sympla)</h3>
+            <p>Compra antecipada com escolha de data e horário. Voucher digital enviado por e-mail.</p>
+            <ul style="color: var(--c-text-soft);">
+              <li>Sem fila na bilheteria</li>
+              <li>Cancelamento até 24h antes</li>
+              <li>Aceita PIX, cartão e boleto</li>
+            </ul>
+            <a class="btn btn-primary mt-4" href="https://www.sympla.com.br" target="_blank" rel="noopener">Comprar agora →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Bilheteria física</h3>
+            <p>Compra no dia, sujeita à disponibilidade. Funciona no horário do museu.</p>
+            <ul style="color: var(--c-text-soft);">
+              <li>Entrada gratuita na última terça do mês</li>
+              <li>Aceita PIX, cartão e dinheiro</li>
+              <li>Pode haver fila em alta temporada</li>
+            </ul>
+            <a class="btn btn-outline mt-4" href="como-chegar.html">Como chegar →</a>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="margin-top: var(--s-7);">Visitas em grupo e escolas</h2>
+      <p>Grupos com 10 pessoas ou mais (turísticos, corporativos ou escolares) devem agendar a visita com antecedência mínima de <strong>15 dias</strong>. Visitas mediadas com educadores estão sujeitas à disponibilidade. Solicite por e-mail: <a href="mailto:agendamento@riomuseuolimpico.com.br">agendamento@riomuseuolimpico.com.br</a>.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-host"></div>
+
+<script src="../assets/js/i18n-data.js"></script>
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/accessibility.js"></script>
+</body>
+</html>

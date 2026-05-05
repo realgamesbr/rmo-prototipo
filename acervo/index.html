@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acervo · Rio Museu Olímpico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<div id="site-header-host"></div>
+
+<main id="main">
+
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Caminho de navegação">
+        <a href="../index.html" data-i18n="page.home">Início</a> ·
+        <span data-i18n="nav.acervo">Acervo</span>
+      </nav>
+      <h1 data-i18n="nav.acervo">Acervo</h1>
+      <p class="lead">Tocha, medalhas, uniformes, fotos, vídeos, documentos e depoimentos catalogados pela equipe de acervo do museu.</p>
+      <div style="margin-top: var(--s-4); display: flex; gap: var(--s-2); flex-wrap: wrap;">
+        <span class="tag" style="background: rgba(255,255,255,.1); color:#fff;">Powered by Tainacan</span>
+        <span class="tag" style="background: rgba(255,255,255,.1); color:#fff;"><span id="acervoCount">15</span> itens</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="acervo-toolbar">
+        <div class="search-box">
+          <input type="search" id="acervoSearch" placeholder="Buscar no acervo (título, descrição, autor...)">
+        </div>
+        <div style="display:flex; gap:var(--s-3); align-items:center;">
+          <label style="font-size: var(--fs-sm); color: var(--c-text-soft);">Ordenar:</label>
+          <select style="padding: var(--s-2) var(--s-3); border:1px solid var(--c-border); border-radius: var(--radius); font-size: var(--fs-sm);">
+            <option>Mais recentes</option>
+            <option>Mais antigos</option>
+            <option>Título (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="acervo-layout">
+        <aside class="acervo-filters" aria-label="Filtros do acervo">
+
+          <div class="filter-group">
+            <h5>Tipo de mídia</h5>
+            <label><input type="checkbox" name="tipo" value="objeto"> <span>Objeto</span> <span class="count">5</span></label>
+            <label><input type="checkbox" name="tipo" value="foto"> <span>Foto</span> <span class="count">4</span></label>
+            <label><input type="checkbox" name="tipo" value="video"> <span>Vídeo</span> <span class="count">3</span></label>
+            <label><input type="checkbox" name="tipo" value="audio"> <span>Áudio</span> <span class="count">1</span></label>
+            <label><input type="checkbox" name="tipo" value="documento"> <span>Documento</span> <span class="count">3</span></label>
+          </div>
+
+          <div class="filter-group">
+            <h5>Categoria</h5>
+            <label><input type="checkbox" name="categoria" value="Cerimônias"> <span>Cerimônias</span></label>
+            <label><input type="checkbox" name="categoria" value="Premiação"> <span>Premiação</span></label>
+            <label><input type="checkbox" name="categoria" value="Vestuário"> <span>Vestuário</span></label>
+            <label><input type="checkbox" name="categoria" value="Mascotes"> <span>Mascotes</span></label>
+            <label><input type="checkbox" name="categoria" value="Documentos"> <span>Documentos</span></label>
+            <label><input type="checkbox" name="categoria" value="Depoimentos"> <span>Depoimentos</span></label>
+            <label><input type="checkbox" name="categoria" value="Arquitetura"> <span>Arquitetura</span></label>
+            <label><input type="checkbox" name="categoria" value="Áudios"> <span>Áudios</span></label>
+            <label><input type="checkbox" name="categoria" value="Paralímpicos"> <span>Paralímpicos</span></label>
+            <label><input type="checkbox" name="categoria" value="Institucional"> <span>Institucional</span></label>
+          </div>
+
+          <div class="filter-group">
+            <h5>Período</h5>
+            <label><input type="checkbox"> <span>Pré-Jogos (2014–2015)</span></label>
+            <label><input type="checkbox"> <span>Jogos (2016)</span></label>
+            <label><input type="checkbox"> <span>Pós-Jogos (2017+)</span></label>
+          </div>
+
+          <button class="btn btn-ghost" style="width:100%;" onclick="document.querySelectorAll('.acervo-filters input[type=checkbox]').forEach(i=>i.checked=false); applyFilters();">Limpar filtros</button>
+        </aside>
+
+        <div>
+          <div class="acervo-grid" id="acervoGrid"></div>
+
+          <div class="acervo-pagination">
+            <button>‹</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>›</button>
+          </div>
+
+          <div style="margin-top: var(--s-7); padding: var(--s-5); background: var(--c-bg-alt); border-radius: var(--radius); border-left: 4px solid var(--c-blue-500);">
+            <h4 style="font-family: var(--f-body); font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-blue-700); margin-bottom: var(--s-2);">Sobre o acervo</h4>
+            <p style="margin: 0; color: var(--c-text-soft);">O acervo digital do Rio Museu Olímpico é gerido pela equipe de catalogação utilizando a plataforma <strong>Tainacan</strong>, padrão IBRAM/IBICT/UnB para coleções museológicas. Todos os itens contam com metadados em conformidade com Dublin Core e podem ser consumidos via API REST aberta.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-host"></div>
+
+<script src="../assets/js/i18n-data.js"></script>
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/accessibility.js"></script>
+<script src="../assets/js/acervo.js"></script>
+</body>
+</html>

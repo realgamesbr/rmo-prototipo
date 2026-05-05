@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fale Conosco · Rio Museu Olímpico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<div id="site-header-host"></div>
+
+<main id="main">
+
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="index.html">Início</a> · <span data-i18n="nav.contato">Fale Conosco</span>
+      </nav>
+      <h1 data-i18n="nav.contato">Fale Conosco</h1>
+      <p class="lead">Atendimento ao público, imprensa, agendamentos e oportunidades. Toda mensagem é respondida em até 5 dias úteis.</p>
+    </div>
+  </header>
+
+  <section class="section" id="atendimento">
+    <div class="container">
+
+      <div class="contato-layout">
+
+        <div>
+          <h2>Mande uma mensagem</h2>
+          <form onsubmit="event.preventDefault(); alert('Mensagem enviada (mock). Você receberá retorno em até 5 dias úteis.');">
+            <div class="form-field">
+              <label for="nome">Nome*</label>
+              <input id="nome" type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail*</label>
+              <input id="email" type="email" required>
+            </div>
+            <div class="form-field">
+              <label for="assunto">Assunto*</label>
+              <select id="assunto" required>
+                <option value="">Selecione...</option>
+                <option>Dúvidas gerais sobre a visita</option>
+                <option>Agendamento de visita em grupo</option>
+                <option>Visita escolar</option>
+                <option>Visita acessível (Libras / Audiodescrição)</option>
+                <option>Imprensa</option>
+                <option>Parcerias institucionais</option>
+                <option>Trabalhe conosco</option>
+                <option>Pedido de informação (LAI)</option>
+                <option>Acessibilidade — barreira identificada</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="msg">Mensagem*</label>
+              <textarea id="msg" required></textarea>
+            </div>
+            <div class="form-field">
+              <label style="display: flex; align-items: flex-start; gap: var(--s-2); font-weight: normal; font-size: var(--fs-sm);">
+                <input type="checkbox" required>
+                <span>Concordo com a <a href="#">Política de Privacidade</a> e o tratamento dos meus dados conforme a LGPD.</span>
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+
+        <div>
+          <div class="contato-info" id="imprensa">
+            <h3>Imprensa</h3>
+            <dl>
+              <div>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:imprensa@riomuseuolimpico.com.br">imprensa@riomuseuolimpico.com.br</a></dd>
+              </div>
+              <div>
+                <dt>Telefone</dt>
+                <dd>(21) XXXX-XXXX (Comunicação) · Seg–Sex 10h–18h</dd>
+              </div>
+              <div>
+                <dt>Releases</dt>
+                <dd><a href="midia/noticias.html#releases">Sala de imprensa →</a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="contato-info mt-5">
+            <h3>Atendimento ao público</h3>
+            <dl>
+              <div>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:visite@riomuseuolimpico.com.br">visite@riomuseuolimpico.com.br</a></dd>
+              </div>
+              <div>
+                <dt>Telefone</dt>
+                <dd>(21) XXXX-XXXX · Ter–Sáb 10h–17h</dd>
+              </div>
+              <div>
+                <dt>WhatsApp</dt>
+                <dd>(21) 9XXXX-XXXX</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="contato-info mt-5" id="trabalhe">
+            <h3>Trabalhe conosco</h3>
+            <dl>
+              <div>
+                <dt>Vagas e processos seletivos</dt>
+                <dd>Publicados em <a href="gestao/index.html#documentos">Gestão → Editais</a></dd>
+              </div>
+              <div>
+                <dt>Currículo (banco de talentos)</dt>
+                <dd><a href="mailto:rh@riomuseuolimpico.com.br">rh@riomuseuolimpico.com.br</a></dd>
+              </div>
+              <div>
+                <dt>Voluntariado</dt>
+                <dd>Inscrições abertas em campanhas anuais — siga nosso Instagram</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container container-sm">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Perguntas mais comuns</h2>
+
+      <div style="margin-top: var(--s-6);">
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Qual é o horário de funcionamento?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Terça a domingo, das 10h às 17h30. Última entrada às 16h. Fechado às segundas e em feriados nacionais.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Como compro ingressos?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Pela plataforma Sympla (online, antecipado) ou diretamente na bilheteria física do museu, sujeito à disponibilidade no dia. Inteira R$ 40, meia R$ 20.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Quem tem direito à meia-entrada?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Estudantes (com carteirinha), professores, idosos 60+, pessoas com deficiência e seu acompanhante (Lei 12.933/13). Documento comprobatório obrigatório na entrada.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Tem entrada gratuita?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Sim. Crianças até 2 anos não pagam. Toda última terça-feira do mês a entrada é gratuita para qualquer público, por ordem de chegada na bilheteria física.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Posso tirar fotos?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Sim, fotografias sem flash são permitidas para uso pessoal. Para uso comercial ou publicações, entre em contato com nossa Comunicação para autorização.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">O museu é acessível?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Sim. 100% do percurso é acessível por rampas e elevadores. Cães-guia são bem-vindos. Oferecemos audioguias com audiodescrição, vídeos com Libras e visitas mediadas adaptadas. Veja todos os recursos em <a href="visite/acessibilidade.html">Visite → Acessibilidade</a>.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Posso levar comida?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Não é permitido o consumo de alimentos e bebidas no interior do museu, exceto água em garrafa lacrada. Temos café com lanches no andar térreo.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Como faço para agendar uma visita escolar?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Escreva para <a href="mailto:agendamento@riomuseuolimpico.com.br">agendamento@riomuseuolimpico.com.br</a> com no mínimo 15 dias de antecedência. Visitas de escolas públicas são gratuitas; escolas particulares têm valores diferenciados.</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Como acessar o acervo digital?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">O acervo está disponível em <a href="acervo/index.html">riomuseuolimpico.com.br/acervo</a>, com busca, filtros e download de metadados. Itens em alta resolução podem ser solicitados pelo formulário de imagens (com finalidade declarada).</p>
+        </details>
+
+        <details style="background: var(--c-bg); border:1px solid var(--c-border); border-radius: var(--radius); padding: var(--s-4); margin-bottom: var(--s-3);">
+          <summary style="font-weight: 600; cursor: pointer; color: var(--c-blue-900);">Onde fica o museu?</summary>
+          <p style="margin-top: var(--s-3); color: var(--c-text-soft);">Velódromo do Parque Olímpico, na Av. Embaixador Abelardo Bueno, Barra da Tijuca. Veja como chegar em <a href="visite/como-chegar.html">Visite → Como chegar</a>.</p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-host"></div>
+
+<script src="assets/js/i18n-data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/accessibility.js"></script>
+</body>
+</html>

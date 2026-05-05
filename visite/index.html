@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visite · Rio Museu Olímpico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<div id="site-header-host"></div>
+
+<main id="main">
+
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html" data-i18n="page.home">Início</a> · <span data-i18n="nav.visite">Visite</span>
+      </nav>
+      <h1 data-i18n="nav.visite">Visite</h1>
+      <p class="lead">Tudo o que você precisa para planejar sua visita ao Rio Museu Olímpico.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="info-cards-grid">
+        <div class="info-card">
+          <div class="icon">🕐</div>
+          <h3>Horário de funcionamento</h3>
+          <p style="color: var(--c-text-soft);">Terça a domingo, das <strong>10h às 17h30</strong>. Última entrada às 16h. Fechado às segundas-feiras e em feriados nacionais.</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <h3>Endereço</h3>
+          <p style="color: var(--c-text-soft);"><strong>Velódromo · Parque Olímpico</strong><br>Av. Embaixador Abelardo Bueno<br>Barra da Tijuca, Rio de Janeiro – RJ</p>
+          <a class="btn btn-ghost btn-sm mt-3" href="como-chegar.html">Como chegar →</a>
+        </div>
+        <div class="info-card">
+          <div class="icon">🎟️</div>
+          <h3>Ingressos</h3>
+          <div class="price-big">R$ 40<small>/inteira</small></div>
+          <div class="price-big" style="font-size: var(--fs-2xl);">R$ 20<small>/meia</small></div>
+          <a class="btn btn-primary btn-sm mt-3" href="horarios-ingressos.html">Comprar →</a>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--s-8);">
+        <h2 style="text-align:center; margin-bottom: var(--s-6);">Mais informações para sua visita</h2>
+        <div class="grid grid-3">
+          <a href="acessibilidade.html" class="card" style="text-decoration:none;">
+            <div class="card-body">
+              <div style="font-size: 32px; margin-bottom: var(--s-3);">♿</div>
+              <h4 data-i18n="nav.visite_acessibilidade">Acessibilidade</h4>
+              <p>Rampas, elevadores, banheiros adaptados, Libras e audiodescrição.</p>
+            </div>
+          </a>
+          <a href="#audioguias" class="card" style="text-decoration:none;">
+            <div class="card-body">
+              <div style="font-size: 32px; margin-bottom: var(--s-3);">🎧</div>
+              <h4 data-i18n="nav.visite_audioguias">Audioguias</h4>
+              <p>Disponíveis em PT, EN e ES. Aplicativo gratuito ou aparelhos físicos no museu.</p>
+            </div>
+          </a>
+          <a href="#politica" class="card" style="text-decoration:none;">
+            <div class="card-body">
+              <div style="font-size: 32px; margin-bottom: var(--s-3);">📋</div>
+              <h4 data-i18n="nav.visite_politica">Política de visitação</h4>
+              <p>Regras de conduta, restrições, fotos, alimentos e bagagens.</p>
+            </div>
+          </a>
+          <a href="#agendar" class="card" style="text-decoration:none;">
+            <div class="card-body">
+              <div style="font-size: 32px; margin-bottom: var(--s-3);">📅</div>
+              <h4 data-i18n="nav.visite_agendar">Agende sua visita</h4>
+              <p>Visitas mediadas para grupos escolares e turísticos com agendamento prévio.</p>
+            </div>
+          </a>
+          <a href="#loja" class="card" style="text-decoration:none;">
+            <div class="card-body">
+              <div style="font-size: 32px; margin-bottom: var(--s-3);">🛍️</div>
+              <h4 data-i18n="nav.visite_loja">Loja</h4>
+              <p>Souvenirs, livros e produtos exclusivos do museu.</p>
+            </div>
+          </a>
+          <a href="#cafe" class="card" style="text-decoration:none;">
+            <div class="card-body">
+              <div style="font-size: 32px; margin-bottom: var(--s-3);">☕</div>
+              <h4>Café</h4>
+              <p>Espaço de descanso com cafés, lanches e refeições leves.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Política de visitação -->
+      <div class="section-sm" id="politica">
+        <h2>Política de visitação</h2>
+        <div class="grid grid-2 mt-5">
+          <div>
+            <h4 style="color: var(--c-green);">✓ Permitido</h4>
+            <ul style="color: var(--c-text-soft); line-height: var(--lh-loose);">
+              <li>Fotografias sem flash para uso pessoal</li>
+              <li>Cães-guia acompanhando pessoas com deficiência visual</li>
+              <li>Garrafa d'água lacrada</li>
+              <li>Mochilas pequenas e bolsas de mão</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--c-red);">✗ Não permitido</h4>
+            <ul style="color: var(--c-text-soft); line-height: var(--lh-loose);">
+              <li>Alimentos e bebidas (exceto água)</li>
+              <li>Cigarro, vape e similares</li>
+              <li>Animais (exceto cães-guia)</li>
+              <li>Patinetes, bicicletas, skates</li>
+              <li>Malas grandes, mochilas de viagem</li>
+              <li>Itens inflamáveis ou armas de qualquer natureza</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audioguias -->
+      <div class="section-sm" id="audioguias" style="background: var(--c-bg-alt); padding: var(--s-7); border-radius: var(--radius-lg);">
+        <div class="grid grid-2" style="align-items:center;">
+          <div>
+            <span class="eyebrow">Audioguias</span>
+            <h2>Sua visita em três idiomas</h2>
+            <p class="lead">Audioguias gratuitos em <strong>português, inglês e espanhol</strong>, com narrativa adaptada para crianças, adultos e visitantes com deficiência visual (audiodescrição).</p>
+            <p>Disponível via aplicativo (download gratuito na App Store e Google Play) ou em aparelhos físicos retirados na recepção mediante caução.</p>
+            <div style="display:flex; gap:var(--s-3); margin-top: var(--s-4);">
+              <a class="btn btn-secondary btn-sm" href="#">App Store</a>
+              <a class="btn btn-secondary btn-sm" href="#">Google Play</a>
+            </div>
+          </div>
+          <div>
+            <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--c-blue-700), var(--c-blue-900)); border-radius: var(--radius); display:flex; align-items:center; justify-content:center; font-size: 80px;">🎧</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loja -->
+      <div class="section-sm" id="loja">
+        <div class="grid grid-2" style="align-items:center;">
+          <div>
+            <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--c-orange), var(--c-red)); border-radius: var(--radius); display:flex; align-items:center; justify-content:center; font-size: 80px;">🛍️</div>
+          </div>
+          <div>
+            <span class="eyebrow">Loja</span>
+            <h2>Leve um pedaço dos Jogos para casa</h2>
+            <p class="lead">Camisetas, canecas, livros, miniaturas, pôsteres e produtos exclusivos com a curadoria do museu. Parte da renda é revertida para os programas educativos.</p>
+            <p>Localizada no foyer do museu, com acesso independente. Aberta no mesmo horário do museu.</p>
+            <a class="btn btn-outline mt-3" href="#">Loja online (em breve)</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-host"></div>
+
+<script src="../assets/js/i18n-data.js"></script>
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/accessibility.js"></script>
+</body>
+</html>
