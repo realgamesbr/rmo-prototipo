@@ -81,51 +81,26 @@
   gap: var(--s-3);
   text-decoration: none;
 }
-.brand-mark {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--c-blue-900);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--f-display);
-  font-size: var(--fs-lg);
-  letter-spacing: 0.02em;
-  position: relative;
-  overflow: hidden;
+.brand-logo {
+  height: 56px;
+  width: auto;
+  display: block;
+  transition: opacity var(--t-fast) var(--ease);
 }
-.brand-mark::before {
-  content:'';
-  position:absolute; left:8px; top:14px;
-  width:8px;height:8px;border-radius:50%;
-  border:2px solid var(--c-blue-500);
+.brand:hover .brand-logo { opacity: .85; }
+
+@media (max-width: 720px) {
+  .brand-logo { height: 40px; }
 }
-.brand-mark::after {
-  content:'';
-  position:absolute; right:8px; top:14px;
-  width:8px;height:8px;border-radius:50%;
-  border:2px solid var(--c-orange);
+
+/* Versão footer (sobre fundo escuro) */
+.site-footer .brand-logo {
+  filter: brightness(0) invert(1);
+  opacity: .92;
 }
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-.brand-text .name {
-  font-family: var(--f-display);
-  font-size: var(--fs-lg);
-  letter-spacing: 0.04em;
-  color: var(--c-blue-900);
-}
-.brand-text .sub {
-  font-size: var(--fs-xs);
-  color: var(--c-text-mute);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  margin-top: 4px;
-}
+
+/* Modo alto contraste: forçar logo monocromático claro */
+body.high-contrast .brand-logo { filter: brightness(0) invert(1); }
 
 /* === Nav + Mega-menu === */
 .main-nav { display: flex; height: 100%; }

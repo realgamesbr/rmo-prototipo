@@ -52,12 +52,8 @@ const HEADER_HTML = `
 
 <header class="site-header" role="banner">
   <div class="container">
-    <a class="brand" href="${rel('index.html')}">
-      <div class="brand-mark" aria-hidden="true">RMO</div>
-      <div class="brand-text">
-        <span class="name" data-i18n="brand.name">Rio Museu Olímpico</span>
-        <span class="sub" data-i18n="brand.sub">Memória viva dos Jogos Rio 2016</span>
-      </div>
+    <a class="brand" href="${rel('index.html')}" aria-label="Rio Museu Olímpico — início">
+      <img src="${rel('assets/img/logo-rmo.png')}" alt="Rio Museu Olímpico" class="brand-logo">
     </a>
 
     <nav class="main-nav" id="mainNav" role="navigation" aria-label="Navegação principal">
@@ -190,14 +186,10 @@ const FOOTER_HTML = `
 
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="brand">
-          <div class="brand-mark" aria-hidden="true">RMO</div>
-          <div class="brand-text">
-            <span class="name" data-i18n="brand.name">Rio Museu Olímpico</span>
-            <span class="sub" data-i18n="brand.sub">Memória viva dos Jogos Rio 2016</span>
-          </div>
-        </div>
-        <p data-i18n="footer.about_text">Plataforma educativa, social e ambiental que preserva o legado Rio 2016.</p>
+        <a class="brand" href="${rel('index.html')}" aria-label="Rio Museu Olímpico — início">
+          <img src="${rel('assets/img/logo-rmo.png')}" alt="Rio Museu Olímpico" class="brand-logo">
+        </a>
+        <p data-i18n="footer.about_text" style="margin-top: var(--s-4);">Plataforma educativa, social e ambiental que preserva o legado Rio 2016.</p>
       </div>
 
       <div>
